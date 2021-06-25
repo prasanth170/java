@@ -1,0 +1,13 @@
+class Main{  
+  public static void main(String args[]){  
+    int i, sum = 0;  
+  
+    int[][] a = {{1, 2}, {4, 5}};
+  
+    for(i = 0; i < a.length ; i++)
+    {
+        sum = sum + a[i][i];
+    }
+  System.out.println("\nThe Sum of the left Diagonal Items = " + sum);
+  }
+  }
