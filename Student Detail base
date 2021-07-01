@@ -1,0 +1,23 @@
+class Studentdeatil{
+public static void main(String[ ]args ){
+int a=20,b=40,c=60,d=50,e=70,x,y,z=19;
+String name="Prasanth.L";
+String mail="prasanth@gmail.com";
+System.out.println("STUDENT DETAILS");
+System.out.println("\n_____________________________");
+System.out.println("NAME:"+name);
+System.out.println("AGE:"+z);
+System.out.println("MAIL ID:"+mail);
+System.out.println("MARK:");
+System.out.println("\nM1="+a);
+System.out.println("\nM2="+b);
+System.out.println("\nM3="+c);
+System.out.println("\nM4="+d);
+System.out.println("\nM5="+e);
+x=a+b+c+d+e;
+System.out.println("\nTOTAL="+x);
+y=x/5;
+System.out.println("AVERAGE="+y);
+System.out.println("\n_____________________________");
+}
+}
