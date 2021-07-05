@@ -1,0 +1,12 @@
+
+//ARRAY SUM OF NUMBERS IN JAVA 
+class Demo{
+public static void main (String[] args ){
+int x[]={1,3,4,5};
+int Sum=0;
+for(int i=0;i<4;i++){
+Sum=Sum+x[i];}
+System.out.println(Sum);
+}
+}
+
