@@ -1,0 +1,18 @@
+class Reverse
+{
+   public static void main(String args[])
+   {
+     String name="welcome to india";
+     String words[]=name.split(" ");
+     for(int i=words.length-1;i>=0;i--){
+       System.out.println (words[i]);
+     int j=words[i].length()-1;
+     while (j>=0){
+       System.out.println(words[i].charAt(j));
+       j--;
+       
+     System.out.println(" ");
+     }
+     }
+     }
+     }
