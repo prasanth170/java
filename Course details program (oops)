@@ -1,0 +1,37 @@
+import java.util.*;
+
+
+ class Course
+ {
+   String name,course,mail;
+    int fees;
+    long mobile;
+    void getDetails() {
+      Scanner s=new Scanner(System.in);
+      System.out.println("ENTER STUDENT NAME:");
+      name=s.nextLine();
+      System.out.println("ENTER MAIL ID:");
+      mail=s.nextLine();
+      System.out.println("ENTER MOB.NO:") ;
+      mobile=Long.parseLong(s.nextLine());
+      System.out.println("ENTER COURSE NAME:");
+      course=s.nextLine();
+      System.out.println("ENTER FEES:");
+      fees=s.nextInt();
+      s.close();
+    }
+    void display() {
+      System.out.println("\t\t\t\t***OCEAN ACADEMY*");
+      System.out.println("\nCOURSE DETAILS");
+      System.out.println("\nNAME:"+name);
+      System.out.println("MOB.NO:"+mobile) ;
+      System.out.println("MAIL ID:"+mail);
+      System.out.println("COURSE:"+course);
+      System.out.println("FEES:"+fees);
+      }  
+      public static void main (String[]args){
+        Course a=new Course();
+        a.getDetails();
+        a.display();
+        }
+}
