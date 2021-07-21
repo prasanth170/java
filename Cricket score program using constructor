@@ -1,0 +1,27 @@
+public class Score {
+   int run,six,four,tscore=0;
+   Score(int x,int y,int z){
+   run=x;
+    six=y;
+    four=z;
+   }
+   void calculate (){
+   int  tsix=six*6;
+   int  tfour=four*4;
+   tscore = tsix + tfour +run;
+     }   
+   void display(){
+     System.out.println ("RUN="+run);
+     System.out.println ("SIX="+six);
+     System.out.println ("FOUR="+four);
+     System.out.println ("TOT.SOCRE="+tscore);
+    }
+      public static void main(String args[]){ 
+    Score Dhoni=new Score(48,5,6);
+    Score Virat=new Score(44,4,8);
+    Score Jd=new Score(50,6,9);
+    System.out.println("*****JD SCORE BOARD*****");
+    Jd.calculate();
+    Jd.display();
+   }
+ }
