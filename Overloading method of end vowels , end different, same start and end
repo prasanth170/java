@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class MethodOverloading
+{
+    public static void string(String str)
+    {
+        if(str.charAt(0)==(str.charAt(str.length() - 1)))
+            System.out.println("BOTH THE FIRST AND LAST ELEMENT ARE EQUAL");
+        else
+            System.out.println("FRONT AND END ELEMENTS ARE DIFFERENT");
+    }
+    public static void string(char a,char b)
+    {
+        if (a==b)
+            System.out.println("BOTH THE FIRST AND LAST ELEMENT ARE EQUAL");
+        else
+            System.out.println("FRONT AND END ELEMENTS ARE DIFFERENT");
+    }
+    public static void string(char a)
+    {
+        a=Character.toLowerCase(a);
+        if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u')
+            System.out.println("THE END ELEMENT ENDS WITH VOWEL");
+        else
+            System.out.println("THE END ELEMENT IS NOT ENDS WITH VOWEL");
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        String str=sc.nextLine();
+        sc.close();
+        string(str);
+        string(str.charAt(0),str.charAt(str.length()-1));
+        string(str.charAt(str.length() - 1));
+    }
+}
